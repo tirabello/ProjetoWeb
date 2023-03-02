@@ -42,4 +42,21 @@ a{
     border-radius: 7px;
 }
 
+img{
+    border-radius: 50%;
+    height: 300px;
+    width: 250px;
+}
+/*flex box*/
+section{
+    display: flex;
+    gap: 2rem;
+    padding: 10.8rem;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
