@@ -1,38 +1,98 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Jacques+Francois+Shadow&family=Montserrat&family=Poppins:wght@900&display=swap');
 
-
+/*css reset*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+:root{
+    --text-primary: #fff;
+    --text-secundary: #000;
+    --font-heading: 'Poppins';
+    --font-default: 'Jacques Francois Shadow';
+    --fontposdefault:'Montserrat';
+    font-size: 62.5%; /*62.5% == 10/16*/
+}
+body{
+    font-family: var(--fontposdefault);
+}
 header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-    background-image: url(./assets/images/lee-campbell-1w1OMV8CEeM-unsplash.jpg);
-    background-size: cover;
     height: 100vh;
     padding-top: 6.5rem;
     padding-left: 12.5rem;
+    color: var(--text-primary);
+    position: relative;
+    overflow: hidden;
+}
+.musica{
+    height: 100px;
+    width: 100px;
+}
+header .p .musica{
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+header::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #B21F1F;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(./assets/images/lee-campbell-1w1OMV8CEeM-unsplash.jpg);
+    background-size: cover;
+    animation: zoom 10s;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+header .botao{
+    align-self: flex-end;
+    margin-right: 17%;
     
 }
-h1{
-    font-size: 50px;
+h1,h2,h3,h4{
     font-weight: 900;
-    color: #fff;
-    font-family: 'Jacques Francois Shadow';
+    font-family: var(--font-default);
+}
+h1{
+    padding-top: 6.5rem;
+    padding-left: 100rem;
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: var(--fontposdefault);
+    align-self: center;
 }
 span{
-    font-size: 35px;
-    color: antiquewhite;
+    font-size: 3.5rem;
+    color: rgb(221, 29, 29);
     font-family: 'Poppins';
+    margin-top: 10rem;
+    margin-left: 6.5rem;
 }
-a{
+p{
+    font-size: 3rem;
+}
+.botao{
     color: #fff;
     font-size: 1.9rem;
     text-decoration: none;
@@ -41,17 +101,22 @@ a{
     padding: 1rem 2rem;
     border-radius: 7px;
 }
+.botao:hover{
+    opacity: .8;   
+}
 
-img{
+#avatar {
     border-radius: 50%;
     height: 300px;
     width: 250px;
+    
 }
 /*flex box*/
 section{
     display: flex;
     gap: 2rem;
     padding: 10.8rem;
+    background-color: rgba(56, 51, 51, 0.356);
 }
 div{
     display: flex;
@@ -59,4 +124,6 @@ div{
     justify-content: space-between;
     align-items: flex-start;
 }
-
+section .botao{
+    align-self: center;
+}
