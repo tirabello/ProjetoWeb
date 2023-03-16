@@ -34,7 +34,33 @@ header{
 .musica{
     height: 100px;
     width: 100px;
+    -webkit-animation: flip-vertical-fwd 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	animation: flip-vertical-fwd 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    
 }
+
+@-webkit-keyframes flip-vertical-fwd {
+    0% {
+      -webkit-transform: translateZ(0) rotateY(0);
+              transform: translateZ(0) rotateY(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px) rotateY(180deg);
+              transform: translateZ(160px) rotateY(180deg);
+    }
+  }
+  @keyframes flip-vertical-fwd {
+    0% {
+      -webkit-transform: translateZ(0) rotateY(0);
+              transform: translateZ(0) rotateY(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px) rotateY(180deg);
+              transform: translateZ(160px) rotateY(180deg);
+    }
+  }
+  
+
 header .p .musica{
     align-items: flex-end;
     flex-direction: row;
@@ -62,6 +88,7 @@ header::before{
         transform: scale(1);
     }
 }
+
 header .botao{
     align-self: flex-end;
     margin-right: 17%;
@@ -100,6 +127,7 @@ p{
     font-family: 'Montserrat';
     padding: 1rem 2rem;
     border-radius: 7px;
+    text-align: center;
 }
 .botao:hover{
     opacity: .8;   
@@ -109,8 +137,9 @@ p{
     border-radius: 50%;
     height: 300px;
     width: 250px;
-    
+    animation: zoom 10s;
 }
+
 /*flex box*/
 section{
     display: flex;
@@ -126,4 +155,65 @@ div{
 }
 section .botao{
     align-self: center;
+}
+#secao-projetos{
+    /*background-color: #c26666;*/
+    justify-content: center;
+}
+
+#secao-projetos ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 35rem;
+     
+    gap: 2rem;
+    color: var(--text-primary);
+    
+}
+.card-text{
+    opacity: 0;
+    position: absolute;
+    top: 20%;
+    transition: opacity 1s, top 1s;
+}
+#secao-projetos li:hover .card-text{
+    opacity: 1;
+    top: 0;
+}
+
+#secao-projetos li::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+#secao-projetos li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    max-width: 35rem;
+    border-radius: 10px;
+    padding: 2rem;
+    position: relative;
+    cursor: pointer;
+}  
+#secao-projetos p{
+    font-size: 1.5rem;
+}
+#Homecoming{
+    background-image: url(./assets/images/Homecoming.jfif);   
+}
+#Lemonade{
+    background-image: url(./assets/images/Lemonade.jfif);
+
+}
+#quatro{
+    background-image: url(./assets/images/4.jfif);
+}
+#IamSasha{
+    background-image: url(./assets/images/Iam.jpg);
 }
