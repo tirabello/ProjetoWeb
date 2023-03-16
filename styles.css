@@ -5,7 +5,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 :root{
@@ -34,8 +34,8 @@ header{
 .musica{
     height: 100px;
     width: 100px;
-    -webkit-animation: flip-vertical-fwd 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-	animation: flip-vertical-fwd 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    -webkit-animation: flip-vertical-fwd 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse ;
+    animation: flip-vertical-fwd 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse ;
     
 }
 
@@ -157,7 +157,7 @@ section .botao{
     align-self: center;
 }
 #secao-projetos{
-    /*background-color: #c26666;*/
+    background-color: #c26666;
     justify-content: center;
 }
 
