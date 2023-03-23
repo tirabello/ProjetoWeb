@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProjetoWeb</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <header>
@@ -54,22 +55,50 @@
             </div>
         </li>
         <li id="Lemonade">
-            <h2>Lemonade</h2>
-            <p>Lemonade is the sixth studio album by American singer Beyoncé. It was released on April 23, 2016, by Parkwood Entertainment and Columbia Records, accompanied by a 65-minute film of the same title.</p>
-            <a href="#" class="botao">Escute Agora</a>
+            <div class="card-lemonade">
+                    <h2>Lemonade</h2>
+                    <p>Lemonade is the sixth studio album by American singer Beyoncé. It was released on April 23, 2016, by Parkwood Entertainment and Columbia Records, accompanied by a 65-minute film of the same title.</p>
+                    <a href="#" class="botao">Escute Agora</a>
+                </div>
+            </div>    
         </li>
         <li id="quatro">
-            <h2>4</h2>
-            <p>4 is the fourth studio album by American singer Beyoncé. Following a career hiatus that reignited her creativity, Beyoncé was inspired to create a record with a basis in traditional rhythm and blues</p>
-            <a href="#" class="botao">Escute Agora</a>
+            <div class="card-text">
+                <h2>4</h2>           
+                <p>4 is the fourth studio album by American singer Beyoncé. Following a career hiatus that reignited her creativity, Beyoncé was inspired to create a record with a basis in traditional rhythm and blues</p>
+                <a href="#" class="botao">Escute Agora</a>
+            </div> 
         </li>
         <li id="Homecoming">   
-            <h2>Homecoming</h2>
-            <p>Homecoming (estilizado como HΘMΣCΘMING) é um documentário de 2019 sobre a cantora norte-americana Beyoncé e sua apresentação no Coachella Valley Music and Arts Festival de 2018. Ele estreou na Netflix em 17 de abril de 2019.</p>
-            <a href="#" class="botao">Escute Agora</a>
+            <div class="card-text">
+               <h2>Homecoming</h2>
+                <p>Homecoming (estilizado como HΘMΣCΘMING) é um documentário de 2019 sobre a cantora norte-americana Beyoncé e sua apresentação no Coachella Valley Music and Arts Festival de 2018. Ele estreou na Netflix em 17 de abril de 2019.</p>
+                <a href="#" class="botao">Escute Agora</a>
+            </div>  
         </li>
     </ul>
 </section>
+<section id="secao-planos">
+    <form action="#">
+        <h3>Planos</h3>
+        <label for="qtde">N. de Paginas</label>
+        <input type="number" id="qtde" min="1" value="1">
+        <label for="js"> Precisa de JS?</label>
+        <input type="checkbox" id="js">
+        <label for="layout">Precisa de layout?</label>
+        <div>
+            <input type="radio" id="layout_sim" name="layout">
+            <label for="">sim preciso</label>
+            <input type="radio" id="layout_nao" name="layout">
+            <label for="">não preciso</label>
+        </div>
+        <label for="prazo">prazo</label>
+        <input type="range" id="prazo" min="1" max="10">
+        <output>0.00</output>
+    
+    </form>
+</section>
 
 </body>
+<script src="./assets/js/script.js"></script>
 </html>

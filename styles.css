@@ -5,7 +5,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+     box-sizing: border-box; 
 }
 
 :root{
@@ -165,10 +165,8 @@ section .botao{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 35rem;
-     
     gap: 2rem;
-    color: var(--text-primary);
-    
+    color: var(--text-primary);    
 }
 .card-text{
     opacity: 0;
@@ -180,6 +178,16 @@ section .botao{
     opacity: 1;
     top: 0;
 }
+.card-lemonade{
+    opacity: 0;
+    top: 20%;
+    transition: opacity 1s, top 1
+}
+#secao-projetos li:hover .card-lemonade{
+    opacity: 1;
+    top: 0;
+}
+
 
 #secao-projetos li::before{
     content: '';
@@ -205,15 +213,49 @@ section .botao{
     font-size: 1.5rem;
 }
 #Homecoming{
-    background-image: url(./assets/images/Homecoming.jfif);   
+    background-image: url(./assets/images/Homecoming.jfif); 
+    background-size: cover;
 }
 #Lemonade{
     background-image: url(./assets/images/Lemonade.jfif);
-
+    background-size: cover;
 }
 #quatro{
     background-image: url(./assets/images/4.jfif);
+    background-size: cover;
 }
 #IamSasha{
     background-image: url(./assets/images/Iam.jpg);
+    background-size: cover;
+}
+
+#secao-planos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://cdn.dribbble.com/users/17243/screenshots/14808102/media/487868391258e3dc361bb84f41cf89b6.png?compress=1&resize=400x300&vertical=top);
+    background-size: cover;
+}
+#secao-planos form{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: #fff9;
+    backdrop-filter: blur(2px);
+    border: 10px;
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+#secao-planos form h3{
+    background-color: #c26666;
+    color: var();
+    position: absolute;
+    top: -40% ;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    font-size: xx-large;
+}
+#secao-planos form output{
+    grid-column: 2;
 }
