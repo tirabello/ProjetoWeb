@@ -16,9 +16,63 @@
     --fontposdefault:'Montserrat';
     font-size: 62.5%; /*62.5% == 10/16*/
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: var(--fontposdefault);
 }
+
+#hamburguer{
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+#hamburguer .linha{
+    height: .5rem;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 .2rem .2rem #000;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: rgb(211, 109, 109);
+    height: 100vh;
+    width: 20rem;
+    z-index: 10;
+    right: -20rem;
+    transition: right 1s;
+    cursor: pointer;
+}
+
+.menu-show{
+    right: 0;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--fontposdefault);
+
+}
+
+nav a:hover{
+    color: #FDBB2D;
+}
+
 header{
     display: flex;
     flex-direction: column;
@@ -167,6 +221,7 @@ section .botao{
     grid-auto-rows: 35rem;
     gap: 2rem;
     color: var(--text-primary);    
+    font-size: larger;
 }
 .card-text{
     opacity: 0;
@@ -210,7 +265,7 @@ section .botao{
     cursor: pointer;
 }  
 #secao-projetos p{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 #Homecoming{
     background-image: url(./assets/images/Homecoming.jfif); 
