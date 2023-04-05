@@ -5,141 +5,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProjetoWeb</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" rel="preload" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <script src="./assets/js/loader.js"></script>
 </head>
 <body>
-
-    <nav>
-        <div id="hamburguer">
-            <div class="linha" id="linha1"></div>
-            <div class="linha" id="linha2"></div>
-            <div class="linha" id="linha3"></div>
-        </div>
-        <ul>
-            <li><a href="#">
-                <i class="fa-solid fa-house fa-beat"></i>
-                Home
-            </a></li>
-            <li><a href="#secao-apresentacao">
-                <i class="fa-solid fa-crown fa-flip"></i>
-                Beyonce
-            </a></li>
-            <li><a href="#secao-projetos">
-                <i class="fa-solid fa-microphone-lines fa-spin fa-spin-reverse"></i>
-                Projetos
-            </a></li>
-            <li><a href="#secao-orcamento">
-                <i class="fa-solid fa-compact-disc fa-shake"></i>
-                Lojinha
-            </a></li>
-        </ul>
-    </nav>
-
-    <header>
-        <h1> SpotMusic</h1>
-        <span>Todas as musicas 
-            em um só
-            lugar...</span>
-            <a href="#secao-apresentacao" class="botao">Saiba mais</a>
-        <p>
-            <img class= "musica" src="assets/images/churras.jfif" alt="">
-            <img class= "musica" src="assets/images/fiona.jfif" alt="">
-            <img class= "musica" src="assets/images/humgria.jfif" alt="">
-        </p>
-        <p>
-            <img class= "musica" src="assets/images/imagine.jfif" alt="">
-            <img class= "musica" src="assets/images/ludmila.jfif" alt="">
-            <img class= "musica" src="assets/images/marisa.jfif" alt="">
-        </p>
-        <p>
-            <img class= "musica" src="assets/images/mitski.jfif" alt="">
-            <img class= "musica" src="assets/images/valesca.jfif" alt="">
-            <img class= "musica" src="assets/images/u2.jpg" alt="">
-        </p>
-</header>
-
-<section id="secao-apresentacao">
-    <img id="avatar" src="assets/images/BEy.jpg" alt="foto da Beyonce">
-    <div>
-        <h2> Beyoncé Giselle Knowles-Carter, </h2>
-        <p>Conhecida também apenas como Beyoncé,
-            é uma cantora, compositora, atriz, modelo, 
-            dançarina, empresária, produtora, diretora
-            e roteirista norte-americana.</p>    
-            <a href="#secao-projetos" class="botao">Discografia</a>
-        </div>
-</section>
-    
-<section id="secao-projetos">
-    <ul>
-        <li id="IamSasha">
-            <div class="card-text">
-                <h2>I am sasha fierce
-                </h2>
-                <p>I Am... Sasha Fierce is the third studio album by American singer Beyoncé.</p>
-                <a href="#secao-orcamento" class="botao">Escute Agora</a>
+    <div class="loader">
+        <div class="spin"></div> 
+    </div>
+    <main class="hiden">
+        <nav>
+            <div id="hamburguer">
+                <div class="linha" id="linha1"></div>
+                <div class="linha" id="linha2"></div>
+                <div class="linha" id="linha3"></div>
             </div>
-        </li>
-        <li id="Lemonade">
-            <div class="card-lemonade">
-                    <h2>Lemonade</h2>
-                    <p>Lemonade is the sixth studio album by American singer Beyoncé. It was released on April 23, 2016, by Parkwood Entertainment and Columbia Records, accompanied by a 65-minute film of the same title.</p>
-                    <a href="#secao-orcamento" class="botao">Escute Agora</a>
+            <ul>
+                <li><a href="#">
+                    <i class="fa-solid fa-house fa-beat"></i>
+                    Home
+                </a></li>
+                <li><a href="#secao-apresentacao">
+                    <i class="fa-solid fa-crown fa-flip"></i>
+                    Beyonce
+                </a></li>
+                <li><a href="#secao-projetos">
+                    <i class="fa-solid fa-microphone-lines fa-spin fa-spin-reverse"></i>
+                    Projetos
+                </a></li>
+                <li><a href="#secao-orcamento">
+                    <i class="fa-solid fa-compact-disc fa-shake"></i>
+                    Lojinha
+                </a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1> SpotMusic</h1>
+            <span>Todas as musicas 
+                em um só
+                lugar...</span>
+                <a href="#secao-apresentacao" class="botao">Saiba mais</a>
+            <p>
+                <img class= "musica" src="assets/images/churras.jfif" alt="">
+                <img class= "musica" src="assets/images/fiona.jfif" alt="">
+                <img class= "musica" src="assets/images/humgria.jfif" alt="">
+            </p>
+            <p>
+                <img class= "musica" src="assets/images/imagine.jfif" alt="">
+                <img class= "musica" src="assets/images/ludmila.jfif" alt="">
+                <img class= "musica" src="assets/images/marisa.jfif" alt="">
+            </p>
+            <p>
+                <img class= "musica" src="assets/images/mitski.jfif" alt="">
+                <img class= "musica" src="assets/images/valesca.jfif" alt="">
+                <img class= "musica" src="assets/images/u2.jpg" alt="">
+            </p>
+        </header>
+
+        <section id="secao-apresentacao">
+            <img id="avatar" class="only-large" src="assets/images/BEy.jpg" alt="foto da Beyonce">
+            <div>
+                <h2> Beyoncé Giselle Knowles-Carter, </h2>
+                <p>Conhecida também apenas como Beyoncé,
+                    é uma cantora, compositora, atriz, modelo, 
+                    dançarina, empresária, produtora, diretora
+                    e roteirista norte-americana.</p>    
+                    <a href="#secao-projetos" class="botao">Discografia</a>
                 </div>
-            </div>    
-        </li>
-        <li id="quatro">
-            <div class="card-text">
-                <h2>4</h2>           
-                <p>4 is the fourth studio album by American singer Beyoncé. Following a career hiatus that reignited her creativity, Beyoncé was inspired to create a record with a basis in traditional rhythm and blues</p>
-                <a href="#secao-orcamento" class="botao">Escute Agora</a>
-            </div> 
-        </li>
-        <li id="Homecoming">   
-            <div class="card-text">
-               <h2>Homecoming</h2>
-                <p>Homecoming (estilizado como HΘMΣCΘMING) é um documentário de 2019 sobre a cantora norte-americana Beyoncé e sua apresentação no Coachella Valley Music and Arts Festival de 2018. Ele estreou na Netflix em 17 de abril de 2019.</p>
-                <a href="#secao-orcamento" class="botao">Escute Agora</a>
-            </div>  
-        </li>
-    </ul>
-</section>
+        </section>
+        
+        <section id="secao-projetos">
+            <ul>
+                <li id="IamSasha">
+                    <div class="card-text">
+                        <h2>I am sasha fierce
+                        </h2>
+                        <p>I Am... Sasha Fierce is the third studio album by American singer Beyoncé.</p>
+                        <a href="#secao-orcamento" class="botao">Escute Agora</a>
+                    </div>
+                </li>
+                <li id="Lemonade">
+                    <div class="card-lemonade">
+                            <h2>Lemonade</h2>
+                            <p>Lemonade is the sixth studio album by American singer Beyoncé. It was released on April 23, 2016, by Parkwood Entertainment and Columbia Records, accompanied by a 65-minute film of the same title.</p>
+                            <a href="#secao-orcamento" class="botao">Escute Agora</a>
+                        </div>
+                    </div>    
+                </li>
+                <li id="quatro">
+                    <div class="card-text">
+                        <h2>4</h2>           
+                        <p>4 is the fourth studio album by American singer Beyoncé. Following a career hiatus that reignited her creativity, Beyoncé was inspired to create a record with a basis in traditional rhythm and blues</p>
+                        <a href="#secao-orcamento" class="botao">Escute Agora</a>
+                    </div> 
+                </li>
+                <li id="Homecoming">   
+                    <div class="card-text">
+                    <h2>Homecoming</h2>
+                        <p>Homecoming (estilizado como HΘMΣCΘMING) é um documentário de 2019 sobre a cantora norte-americana Beyoncé e sua apresentação no Coachella Valley Music and Arts Festival de 2018. Ele estreou na Netflix em 17 de abril de 2019.</p>
+                        <a href="#secao-orcamento" class="botao">Escute Agora</a>
+                    </div>  
+                </li>
+            </ul>
+        </section>
 
-<section id="secao-orcamento">
-    <form action="#">
-        <h3>
-            <i class="fa-solid fa-dollar-sign fa-bounce"></i>
-            Discos de vinil para venda!
-            <i class="fa-solid fa-dollar-sign fa-bounce"></i>
-        </h3>
-        <label for="qtde">Quantos discos?</label>
-        <input type="number" id="qtde" min="1" value="1">
-        <label for="js">Para presente?</label>
-        <input type="checkbox" id="js">
-        <label for="layout">Importado ou Nacional?</label>
-        <div class="input-group">
-            <input type="radio" id="layout_sim" name="layout">
-            <label for="layout_sim">Importado</label>
-            <input type="radio" id="layout_nao" name="layout">
-            <label for="layout_nao">Nacional</label>
-            <input type="radio" id="ambos" name="layout">
-            <label for="ambos"> Importado e Nacional</label>
-        </div>
-        <label for="prazo">Prazo de entrega</label>
-        <input type="range" id="prazo" min="1" max="10">
-        <output><i class="fa-solid fa-r fa-bounce"></i>
-                <i class="fa-solid fa-dollar-sign fa-bounce"></i>
-            0,00
-        </output>
-        <a href="#" class="botao">
-            <i class="fa-solid fa-music fa-spin-pulse"></i>
-            Finalizar!
-        </a>
-    </form>
-</section>
-
+        <section id="secao-orcamento">
+            <form action="#">
+                <h3>
+                    <i class="fa-solid fa-dollar-sign fa-bounce"></i>
+                    Discos de vinil para venda!
+                    <i class="fa-solid fa-dollar-sign fa-bounce"></i>
+                </h3>
+                <label for="qtde">Quantos discos?</label>
+                <input type="number" id="qtde" min="1" value="1">
+                <label for="js">Para presente?</label>
+                <input type="checkbox" id="js">
+                <label for="layout">Importado ou Nacional?</label>
+                <div class="input-group">
+                    <input type="radio" id="layout_sim" name="layout">
+                    <label for="layout_sim">Importado</label>
+                    <input type="radio" id="layout_nao" name="layout">
+                    <label for="layout_nao">Nacional</label>
+                    <input type="radio" id="ambos" name="layout">
+                    <label for="ambos"> Importado e Nacional</label>
+                </div>
+                <label for="prazo">Prazo de entrega</label>
+                <input type="range" id="prazo" min="1" max="10">
+                <output><i class="fa-solid fa-r fa-bounce"></i>
+                        <i class="fa-solid fa-dollar-sign fa-bounce"></i>
+                    0,00
+                </output>
+                <a href="#" class="botao">
+                    <i class="fa-solid fa-music fa-spin-pulse"></i>
+                    Finalizar!
+                </a>
+            </form>
+        </section>
+    </main>
 </body>
 <script src="./assets/js/script.js"></script>
 <script src="./assets/js/menu.js"></script>
