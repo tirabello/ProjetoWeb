@@ -115,9 +115,14 @@ header{
     overflow: hidden;
 }
 
-header span, h1 {
+header h1 {
     font-size: clamp(3rem, 5vw, 5rem) ;
 }
+
+header span {
+    font-size: clamp(3rem, 5vw, 5rem) ;
+}
+
 .musica{
     height: 100px;
     width: 100px;
