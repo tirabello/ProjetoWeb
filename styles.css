@@ -394,5 +394,9 @@ input[type=number]
     .only-large{
         display: none;
     }
-    
+}
+@media (max-width: 425px){
+    #chato2{
+        display: none;
+    }
 }
