@@ -122,8 +122,7 @@ header span, h1 {
     height: 100px;
     width: 100px;
     -webkit-animation: flip-vertical-fwd 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse ;
-    animation: flip-vertical-fwd 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse ;
-    
+    animation: flip-vertical-fwd 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse ;   
 }
 
 @-webkit-keyframes flip-vertical-fwd {
@@ -186,9 +185,11 @@ h1,h2,h3,h4{
     font-family: var(--font-default);
 }
 h1{
-    padding-top: 6.5rem;
-    padding-left: 100rem;
+    margin-right: 17%;
+    margin-top: 6.5rem;
+    margin-left: 100rem;
     font-size: 5rem;
+    align-self: flex-end;
 }
 h2{
     font-size: 4rem;
@@ -376,6 +377,9 @@ input[type=number]
         grid-template-columns: 1fr;
         
     }
+    #chato{
+        display: none;
+    }
     #secao-orcamento form{
         display: flex;
         flex-direction: column;
@@ -385,4 +389,5 @@ input[type=number]
     .only-large{
         display: none;
     }
+    
 }
